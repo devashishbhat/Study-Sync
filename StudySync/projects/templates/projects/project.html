@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+
+
+
+{% block content %}
+<p><b><i>This is from project.html</i></b></p>
+<p>ID is {{projectObj.id}}</p>
+<p>Title is {{projectObj.title}}</p>
+<p>Description is {{projectObj.description}}</p>
+<p>Tags for this project are</p>
+{% for tag in tags %}
+    <span style="border: 1px solid cyan; background-color: cyan;">{{tag}}</span>
+
+{% endfor %}
+
+
+   
+
+<hr>
+{% endblock %}
+

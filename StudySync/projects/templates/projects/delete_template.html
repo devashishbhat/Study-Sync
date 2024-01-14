@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+<form action="" method="POST">
+{%csrf_token%}
+<h1>Are you sure you want to delete <b style="color: rgb(171, 100, 100);">{{project.title}}?</b></h1>
+<button style="background-color: rgb(47, 192, 47);"><a href="{% url 'projects' %}">Go Back</a></button>
+<input type="submit" value="Delete" style="background-color: red;">
+</form>
+
+
+{% endblock %}
